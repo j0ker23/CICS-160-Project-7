@@ -4,7 +4,7 @@ In total, I made 4 additional changes.
     Specifically, the boast ability allows the player to boost their damage for a limited number of rounds which should automatically expire. 
     The Knight can use these a limited amount of times per fight, encouraging strategy. This feature integrates cleanly with the existing system, 
     extending CombatEntity and PlayerControlled. The boast mechanic exists outside of the GameDrive loop, meaning it doesn't need to keep track of it. 
-    In terms of SOLID principles, Knight extends CombatEntity so it should work for every instance of CombatEntity, satisfying Liskov's Substitution Principle
+    In terms of SOLID principles, Knight extends CombatEntity so it should work for every instance of CombatEntity, satisfying Liskov's Substitution Principle.
 
 2. Added a Gambler class that has attacks and defence based on rng. 
     In term of damage, the Gambler rolls a d20 and based on what they roll, that's the damage they deal out. If the Gambler rolls a 1, they will slip
